@@ -1,39 +1,101 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  font-style: sans-serif;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.productContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: row wrap;
+}
+
+.productInfo {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 10px 0 20px 0;
+  border: 1px solid white;
+  padding: 10px;
+  padding-top: 0;
+  
+}
+.productInfo:hover {
+  border: 1px solid rgb(238, 238, 238);
+}
+
+.itemTitle {
+  display: block;
+  width: 195px;
+  height: 42px;
+  text-align: center;
+  font-weight: 400;
+  /* border: 1px solid; */
+}
+
+.freeShippingLabel {
+  position: relative;
+  top: 21px;
+  left: 130px;
+  background-color: black;
+  color: white;
+  width: 65px;
+  height: 20px;
+  line-height: 5px;
+  letter-spacing: 0.1;
+  font-size: 9px;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.itemImage {
+  display: block;
+  width: 195px;
+  padding-bottom: 20px;
+  /* border: 1px solid; */
+}
+
+.yellowHr {
+  width: 25px;
+  border: 1px solid rgb(232, 174, 48);
+  margin-left: 85px;
+}
+
+.cost {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 12px auto 12px auto;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.currency {
+  /* border: 1px solid; */
+  display: block;
+  font-size: 13px;
+  align-self: flex-end;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px)
-  }
-  100% {
-    transform: translateY(0px)
-  }
+.price {
+  /* border: 1px solid; */
+  padding-left: 3px;
+  font-weight: 800;
+  font-size: 20px;
+  display: block;
+}
+
+.addToCartBtn {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+.addToCartBtn:hover {
+  background-color:  rgb(220, 163, 40);
+  border: none;
+}
+
+.addToCartBtn:focus {
+  outline:0;
 }
