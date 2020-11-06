@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getProduct } from "./productSlice";
-// import { addToCart } from "./cartSlice";
+import { addToCart } from "../cart/cartSlice";
 // import { getProduct, selectProduct} from "./productSlice";
 // css
 //          THIS SHOULD BE MOVED TO THE APP.JS
